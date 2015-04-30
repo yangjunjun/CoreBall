@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Core Ball</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+  <!-- 旋转盘 -->
+  <ul id="pan" class="roller">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <!-- 带插入的小球 -->
+  <ul id="ball">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+  </ul>
+<script src="basic.js"></script> 
+<!-- 测试用
+<button id="stop" style="position:fixed;right:100px;bottom:20px;">stop</button>
+<button id="resume" style="position:fixed;right:20px;bottom:20px;">resume</button>
+<script type="text/javascript">
+  var btnStop = document.getElementById('stop');
+  var btnResume = document.getElementById('resume');
+  var panTest = document.getElementById('pan');
+  btnStop.addEventListener('click', function(){
+    panTest.classList.add('stop');
+  }, false)
+  btnResume.addEventListener('click', function(){
+    panTest.classList.remove('stop');
+  }, false)  
+</script>
+ -->
+</body>
+</html>
