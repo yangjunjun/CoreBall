@@ -4,7 +4,7 @@
 
 ## 演示 
 
-http://yangjunjun.github.io/CoreBall/(请使用 chrome 浏览器查看)
+http://yangjunjun.github.io/CoreBall/  (请使用 chrome 浏览器查看)
 
 ## 缘起
 
