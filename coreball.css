@@ -1,16 +1,10 @@
-/* 
- * @Author: xngiser
- * @Date:   2015-04-30 19:28:48
- * @Email:   ggiiss@qq.com
- * @Last Modified by:   xngiser
- * @Last Modified time: 2015-04-30 22:46:37
- */
  body{
   padding:0;
   margin:0;
   height:100%;
   background-color: black;
   overflow: hidden;
+  -webkit-transition: all 1s;
  }
  #pan{
   width:80px;
@@ -83,13 +77,18 @@
   margin-top:5px;
   cursor: pointer;
  }
-
+/* 游戏停止的样式 */
 .stop{
   -webkit-animation-play-state:paused;
 }
 .run{
   -webkit-animation-play-state:running;
 }
+/* 游戏失败的样式 */
 .fail{
   background-color: red;
+}
+/* 游戏成功的样式 */
+.success{
+  background-color: green;
 }
