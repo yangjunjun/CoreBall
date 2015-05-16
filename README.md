@@ -1,10 +1,10 @@
 # CoreBall
 
-![Core Ball](https://git.oschina.net/ggiiss/CoreBall/raw/master/coreball.gif)
+![Core Ball](https://raw.githubusercontent.com/yangjunjun/CoreBall/master/coreball.gif)
 
 ## 演示 
 
-http://xcoreball.oschina.mopaas.com/ (请使用 chrome 浏览器查看)
+http://yangjunjun.github.io/CoreBall/(请使用 chrome 浏览器查看)
 
 ## 缘起
 
