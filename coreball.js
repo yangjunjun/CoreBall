@@ -10,16 +10,23 @@
   var pan = document.getElementById("pan");
   var ball = document.getElementById("ball");
   var body = document.body;
+  var level = 1;  // 关卡
 
   var balls ,     // 获取等待弹出的球
       ballIndex , // 获取等待弹出的球索引值
       angleArr;   // 定义旋转圆盘上球的角度值，可以用于判断最后插入的球是否有碰撞，初始时已存在四个球
     // 添加事件
 
-  function init(){
+  function init(level){
     // 布局
     pan.innerHTML = "<li></li><li></li><li></li><li></li>";
-    ball.innerHTML = "<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>";
+    //ball.innerHTML = "<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>";
+    ball.innerHTML = "";
+    for(var i =1; i < level + 6; i++){
+      var li = document.createElement('li'); 
+      li.textContent = i
+      ball.appendChild(li);
+    }
     balls = document.querySelectorAll('#ball li');
     ballIndex = 0;
     angleArr = [0, 90, 180, 270];   
@@ -91,13 +98,13 @@
     body.removeEventListener('click', handler , false);
     if (flag){
       document.body.classList.add('success');
-      alert('Success');
-      init()
+      alert('恭喜你通过了第'+ level + "关");
+      init(++level)
     }
     else{
       document.body.classList.add('fail');
-      alert('Fail');      
-      init()
+      alert('很抱歉你失败了！');      
+      init(level)
     }
   }
   //事件处理
@@ -105,5 +112,5 @@
     action(balls[ballIndex]);  
   }
   //运行
-  init();
+  init(level);
 })
